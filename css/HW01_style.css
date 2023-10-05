@@ -1,15 +1,65 @@
 body {
+    margin: 0 auto;
     width: 800px;
+    padding: 0;
     background-image: url('../images/back_all.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     color: #ffffff;
 }
+
 p {
-	font-size: 1em;
-	line-height: 1.4em;
+    font-size: 1em;
+    line-height: 1.4em;
 }
+
 ul,li {
-	list-style-type: none;
+    list-style-type: none;
+}
+h1 {
+    float: right;
+    margin: 20px,10px,0,0;
+}
+#logo{
+    width: 100px;
+    clear: right;
+    float: right;
+    margin: 0,10px,0,0;
+}
+#side_left{
+    float: left;
+    width: 500px;
+}
+#side_right{
+    float: right;
+    width: 200px;
+}
+#side_right h2{
+    
+}
+#side_right2{
+    clear: right;
+    float: right;
+}
+#side_right3{
+    clear: right;
+    float: right;
+}
+#head{
+    clear: both;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.4em;
+    background-color: #c95400;
+}
+#head li{
+    text-align: center;
+    display: inline;
+    padding: 100px 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footor{
+    clear: both;
 }
