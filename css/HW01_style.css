@@ -1,3 +1,15 @@
 body {
-    background-image: url('web-class/images/back_all.jpg') no-repeat center fixed;
+    width: 800px;
+    background-image: url('../images/back_all.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: #ffffff;
+}
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+ul,li {
+	list-style-type: none;
 }
