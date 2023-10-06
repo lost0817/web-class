@@ -21,6 +21,11 @@ h1 {
     float: right;
     margin: 20px,10px,0,0;
 }
+#bigimg{
+    width: 200px;
+    border: #c95400;
+    display: inline;
+}
 #logo{
     width: 100px;
     clear: right;
@@ -36,15 +41,26 @@ h1 {
     width: 200px;
 }
 #side_right h2{
-    
+    background-color: #c92800;
+    text-align: center;
 }
 #side_right2{
     clear: right;
     float: right;
+    width: 200px;
+}
+#side_right2 h2{
+    background-color: #c92800;
+    text-align: center;
 }
 #side_right3{
     clear: right;
     float: right;
+    width: 200px; 
+}
+#side_right3 h2{
+    background-color: #c92800;
+    text-align: center;
 }
 #head{
     clear: both;
