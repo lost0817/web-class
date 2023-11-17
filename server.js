@@ -44,13 +44,14 @@ server.get("/service", function(req, res){
 
 server.get("/portfolio", function(req, res){
     
-    PortfolioDB.find({}).then(results => {
-        if(results !=null){
-            res.send(results);
-        }else{
-            res.send("Error!")
-        }
-    }) 
+    res.send("Hi");
+    // PortfolioDB.find({}).then(results => {
+    //     if(results !=null){
+    //         res.send(results);
+    //     }else{
+    //         res.send("Error!")
+    //     }
+    // }) 
     
 })
 
@@ -65,5 +66,5 @@ server.post("/contact", function(req, res){
 
 
 server.listen(5500, function(){
-    console.log("Server is running at port 8000!")
+    console.log("Server is running at port 5500!")
 })
