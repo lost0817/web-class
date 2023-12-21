@@ -20,6 +20,13 @@ article {
 #logoimg {
     width: 100px;
 }
-footer img{
+
+footer {
+    padding: 0;
+    margin: 0 auto;
+    background-color: #0749ff;
+}
+
+footer img {
     width: 50px;
 }
