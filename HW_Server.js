@@ -1,8 +1,13 @@
 // HW_Server.js
 const express = require('express');
+const bodyParser = require('body-parser');
 const path = require('path');
 const HW_Server = express();
 const port = 817;
+
+// 使用 body-parser 中介軟體來解析 POST 請求的主體
+HW_Server.use(bodyParser.urlencoded({ extended: true }));
+HW_Server.use(bodyParser.json());
 
 // 設定靜態檔案路徑
 HW_Server.use(express.static(path.join(__dirname, 'web-class')));
