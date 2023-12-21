@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const HW_Server = express();
-const port = 817;
+const port = 8170;
 
 // 使用 body-parser 中介軟體來解析 POST 請求的主體
 HW_Server.use(bodyParser.urlencoded({ extended: true }));
