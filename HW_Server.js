@@ -10,7 +10,7 @@ HW_Server.use(bodyParser.urlencoded({ extended: true }));
 HW_Server.use(bodyParser.json());
 
 // 設定靜態檔案路徑
-HW_Server.use(express.static(path.join(__dirname, 'web-class')));
+//HW_Server.use(express.static(path.join(__dirname, 'web-class')));
 
 // 設定根路由，回傳您製作好的 HTML 檔案
 HW_Server.get('/', (req, res) => {
