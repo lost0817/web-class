@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     padding: 0;
-    background-image: url('../images/下載.jpg');
+    background-image: url('../public/下載.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
