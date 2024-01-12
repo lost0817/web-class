@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -103,7 +105,7 @@
                 Market排名第7,2020年爬升至第5。咖波和漫畫中的其他角色也很常進行電子遊戲跟公司的商業合作。其受歡迎的程度催生了許多合作店面，如台中的咖波屋、奶泡貓咖啡等。</p>
         </div>
         <div id="section2" class="container mt-5">
-            <h2>角色介紹</h2>
+            <h2 id="Charintro">角色介紹</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -226,6 +228,7 @@
             </div>
         </div>
     </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const serverEndpoint = '/getData';
@@ -241,56 +244,7 @@
                         dataContainer.appendChild(div);
                     });
                 })
-                // .then(response => {
-                //     if (!response.ok) {
-                //         throw new Error('Network response was not ok');
-                //     }
-                //     return response.json();
-                // })
-                // .then(data => {
-                //     console.log('NeDB data from server:', data);
-                //     const matchingData = data.find(item => item.class === gameIdentifier);
-                //     const Face = document.getElementById('Face');
-                //     const Price = document.getElementById('Price');
 
-                //     console.log('Matching data:', matchingData);
-
-                //     if (matchingData) {
-                //         Face.innerHTML = matchingData.Face;
-                //         Price.innerHTML = matchingData.Price;
-                //         Capoo_Face(matchingData);
-                //     } else {
-                //         console.log('No matching data found for gameIdentifier:', gameIdentifier);
-                //     }
-
-                //     function Capoo_Face(matchingData) {
-                //         for (let i = 0; i < randomizedIndices.length; i++) {
-                //             const randomizedIndex = randomizedIndices[i];
-                //             const characterContainer3 = document.createElement('div');
-                //             let imgElement;
-
-                //             if (matchingData) {
-                //                 const CGPath = `../image/i${randomizedIndex}.jpg`;
-                //                 imgElement = document.createElement('img');
-                //                 const imgCheck = new Image();
-
-                //                 imgCheck.src = CGPath;
-
-                //                 imgCheck.onload = function () {
-                //                     imgElement.src = CGPath;
-                //                     characterContainer3.appendChild(imgElement);
-                //                 };
-                //             }
-
-                //             characterContainer3.classList.add('col-12', 'col-md-6', 'my-4');
-                //             imgElement.classList.add('col-12');
-
-                //             // 將 characterContainer1 附加到 DOM 中
-                //             CG.appendChild(characterContainer3);
-                //         }
-                //     }
-
-                // })
                 .catch(error => {
                     console.error('There was a problem with the fetch operation:', error);
                 });
@@ -300,6 +254,21 @@
             const url = new URL(window.location.href);
             return url.searchParams.get(name);
         }
+
+        gsap.fromTo("#Charintro", {
+            opacity: 0,
+        }, {
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#Charintro",
+                start: "top center-=25pt",
+                end: "top center+=25pt",
+                toggleActions: "restart restart reset reset",
+                markers: true,
+            },
+        });
+
     </script>
 </body>
 
